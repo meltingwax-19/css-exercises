@@ -1,18 +1,43 @@
-.header  {
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
   font-family: monospace;
   background: papayawhip;
+  width: 98%;
+  margin: 10px auto;
 }
 
 .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 48px;
   font-weight: 900;
   color: tomato;
   background: white;
   padding: 4px 32px;
+  margin: 10px;
 }
 
 ul {
-  /* this removes the dots on the list items*/
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 20px;
   list-style-type: none;
 }
 
@@ -20,6 +45,33 @@ a {
   font-size: 22px;
   background: white;
   padding: 8px;
-  /* this removes the line under the links */
   text-decoration: none;
+}
+
+@media all and (max-width: 800px) {
+
+  .logo {
+    font-size: 36px;
+    align-items: center;
+  }
+
+  a {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 600px) {
+
+  .logo {
+    font-size: 20px;
+    align-items: center;
+  }
+
+  a {
+    font-size: 12px;
+  }
+
+  ul {
+    gap: 5px;
+  }
 }
