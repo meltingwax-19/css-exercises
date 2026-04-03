@@ -1,15 +1,50 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
+  margin: 0;
   font-family: 'Courier New', Courier, monospace;
 }
 
+.main {
+  width: 95%;
+  max-width: 1200px;
+  margin: 10px auto;
+  /* background-color: pink; */
+}
+
 img {
-  width: 100px;
-  height: 100px;
+  /* width: 100px;
+  height: 100px; */
+  max-width: 100%;
+  height: auto;
 }
 
 .title {
   font-size: 36px;
   font-weight: 900;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+section {
+  display: flex;
+  flex-flow: column wrap;
+  width: 200px;
+  text-align: center;
 }
 
 /* do not edit this footer */
